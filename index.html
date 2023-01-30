@@ -13,13 +13,47 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        background: '#06070E',
+                        orange1: '#FF9000',
+                        yellow1: '#F0B315',
+                        white1: '#e6e6e6',
+                        blue1: '#5B5F97',
+                        purple1: '#990033'
                     }
                 }
             }
         }
     </script>
 </head>
-<body>
-    <h1 class="">Hello World</h1>
+<body class="bg-background">
+    <main class="flex p-20 h-screen justify-around content-center items-center">
+        <section class="grid justify-items-center">
+            <h1 class="titulo text-orange1 text-center text-7xl">BookCoffee</h1>
+            <h2 class="subtitulo text-orange1 text-center text-3xl mt-2">Find your favorites books while enjoy the greatests coffees</h2>
+            <section>
+                <img class="image" src="./assets/—Pngtree—coffee coffee powder brown coffee_6373238.png" alt="">
+            </section>
+        </section>
+        <section>
+            <form action="" class="border-2 border-purple1 py-10 px-6 rounded-md grid gap-20">
+                <section class="grid gap-2">
+                    <label for="username" class="text-yellow1 font-semibold text-xl">Username</label>
+                    <input type="text" id="username" class="block bg-transparent border-2 border-purple1 rounded text-lg text-white1 py-1 px-2 outline-none">                    
+                </section>
+                <section class="grid gap-2">
+                    <label for="userPassword" class="text-yellow1 font-semibold text-xl">Password</label>
+                    <input type="password" name="userPassword" id="userPassword" class="block bg-transparent border-2 border-purple1 rounded text-lg text-white1 py-1 px-2 outline-none">                    
+                </section>
+                <section class="grid grid-cols-2">
+                    <a href="/" class="register text-blue1 font-medium text-base">Register</a>
+                    <a href="/" class="forgotPassword text-blue1 font-medium text-base text-right ml-24">Forgot Password</a>
+                </section>
+                <button type="submit" class="bg-gradient-to-b from-yellow1 to-orange1 py-4 font-bold text-xl rounded-md">ACCESS</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-white1 py-4">
+        <a class="block text-center" href='https://pngtree.com/so/Coffee'>Coffee png from pngtree.com/</a>
+    </footer>
 </body>
 </html>
